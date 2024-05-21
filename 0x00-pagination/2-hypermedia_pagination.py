@@ -59,8 +59,7 @@ class Server:
 
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-        """returns a dictionary containing the following key-value pairs
-        """
+        """returns a dictionary containing the following key-value pairs """
         assert type(page) is int and page > 0
         assert type(page_size) is int and page_size > 0
 
