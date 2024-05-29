@@ -14,17 +14,17 @@ Use that class as config for your Flask app.
 
 from flask import Flask, render_template
 from flask_babel import Babel
-from config import Config
 
 
-class config:
+class config(object):
     LANGUAGE = ['eng', 'fr']
-    BABEL_DEFAULT_LOCALE = "en"
-    BABEL_DEFAULT_TIMEZONE = "UTC"
+    BABEL_DEFAULT_LOCALE = 'en'
+    BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
+# configure the flask app
 app = Flask(__name__)
-app.config.from_pyfile('mysettings.cfg')
+app.config.from_object('Config')
 babel = Babel(app)
 
 
