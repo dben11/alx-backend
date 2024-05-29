@@ -12,12 +12,13 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
-  """
-  Render the index.html template.
+    """
+    Render the index.html template.
 
-  Returns:
-  str: Rendered HTML template
-  """
-  return render_template('0-index.html')
+    Returns:
+    str: Rendered HTML template
+    """
+    return render_template('0-index.html')
