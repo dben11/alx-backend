@@ -6,7 +6,7 @@ template that simply outputs “Welcome to Holberton” as page title (<title>) 
 """
 
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
