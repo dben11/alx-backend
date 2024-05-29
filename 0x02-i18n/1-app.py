@@ -20,7 +20,7 @@ from config import Config
 class config:
     LANGUAGE = ['eng', 'fr']
     BABEL_DEFAULT_LOCALE = "en"
-    BABEL_DEFAULT_TIMEZONE
+    BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
 app = Flask(__name__)
