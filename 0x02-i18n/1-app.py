@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
+"""A simple flask app
 """
-Use that class as config for your Flask app.
-"""
+
 
 from flask import Flask, render_template
 from flask_babel import Babel
 
 
-class config(object):
-    """__summary__
+class Config(object):
+    """_summary_
 
-    Retuns:
-    	   _type_: _description_
-
+    Returns:
+            _type_: _description_
     """
-    LANGUAGE = ['eng', 'fr']
+    LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
@@ -30,3 +29,7 @@ def index():
     """_summary_
     """
     return render_template('1-index.html')
+
+
+if __name__ == '__main__':
+    app.run(port="5000", host="0.0.0.0", debug=True)
