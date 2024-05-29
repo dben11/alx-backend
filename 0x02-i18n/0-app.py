@@ -14,4 +14,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Welcome to Holberton'
+    return render_template('0-index.html')
