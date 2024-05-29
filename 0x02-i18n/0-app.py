@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""First you will setup a basic Flask app in 0-app.py. Create a
+"""
+First you will setup a basic Flask app in 0-app.py. Create a
 single /
 route and an index.html
 template that simply outputs “Welcome to Holberton” as page title
@@ -16,4 +17,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('0-index.html')
+  """
+  Render the index.html template.
+
+  Returns:
+  str: Rendered HTML template
+  """
+  return render_template('0-index.html')
